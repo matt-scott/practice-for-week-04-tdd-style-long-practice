@@ -1,5 +1,11 @@
 function myMap(inputArray, callback) {
-  // Your code here
+  let rtnArr = [];
+
+  for (let i = 0; i < inputArray.length; i++) {
+    rtnArr.push(callback(inputArray[i]));
+  }
+
+  return rtnArr;
 }
 
 module.exports = myMap;
